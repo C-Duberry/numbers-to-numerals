@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <title>Roman Numeral Converter</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+                    <div id="heading">
+
+             <h1>The Romaniser</h1>
+
+        </div>
+         
+        <form id="myForm">
+            <span id="instruct"><h3 >Name the Day and It Shall Be Roman...</h3></span>
+            <div class="inputForm">
+              
+            <label for="days" id="dayLabel">Day</label> 
+            <div class="inputBoxDays">
+            <select id="days" name="day" class="inputBox" >
+                <option value="" disabled selected>Select Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+       
+        </div>
+           <p class="inputDelim" id="delim1"></p>
+            <label id="monthLabel"for="Month">Month</label> 
+            <div class="inputBoxMonth">
+             
+            <select id="Month" name="month"class="inputBox" >
+                <option value="" disabled selected>Select Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+                </select>
+       
+            </div>
+                     <p class="inputDelim" id="delim2"></p>
+                <label for="year" id="yearLabel">Year</label> 
+         <div class="inputBoxYear">
+                <input type="number" id="year" name="year" min="1900" max="" placeholder=""  class="inputBox"oninput="dateValidator(event)">
+         </div>
+        </div>
+        <div id="separatorButtons">
+            <div id="separatorSection">
+             <label for="separator" id="separatorLabel">Choose Delimiter</label>
+                <select id="separator"  name="separator"  >
+                <option value="none">None</option>
+                <option value="/">/</option>
+                <option value="." >.</option>
+                <option value="," >,</option>
+                <option value="-" >-</option>
+             </select>   
+        </div> 
+       
+        <div id="convert-reset-btn">
+             <button type="submit" id="submit">Convert</button>
+             <button type="reset" id="resetButton">Reset</button>
+            </div> 
+      
+        </div>
+            </form>
+            <div id="bottomSection">
+<div id="numeralOutput">
+    <div id="numeralReturn">
+        <div id="copyText">Copy</div>
+        <h2 id="romanHeading">Roman Numerals</h2>
+        <h2 id="convertedNumber">-</h2>
+    </div>
+    <div id="birthDate">
+        <h2>Arabic Numbers</h2>
+        <h2 id="birthDateNumber">-</h2>
+    </div>
+</div>
+</div>
+
+</div>
+<!-- </div> -->
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
