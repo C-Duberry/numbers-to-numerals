@@ -8,8 +8,8 @@ A responsive web tool that converts numbers into written numerals, featuring a c
 ## Features
 
 - Converts numbers to written numerals instantly
+- Gives the user delimiter options
 - Clean, easy-to-read interface
-- Works on all modern browsers
 - Responsive design for desktop and mobile
 
 ## Technologies Used
