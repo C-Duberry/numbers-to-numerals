@@ -126,6 +126,8 @@ form {
 #monthLabel { grid-area: month; }
 #yearLabel  { grid-area: year; }
 
+#delim1 { grid-area: delim1; }
+#delim2 { grid-area: delim2; }
 .inputForm .inputBoxDays  { grid-area: dayInput; }
 .inputForm .inputBoxMonth { grid-area: monthInput; justify-content: space-around; }
 .inputForm .inputBoxYear  { grid-area: yearInput; }
@@ -179,6 +181,11 @@ form {
   flex-grow: 1;
 }
 
+.inputDelim{
+    place-self: end center;
+    font-size: 24px;
+}
+
 #convert-reset-btn {
   margin-left: auto;
   display: flex;
@@ -200,6 +207,7 @@ button {
   font-weight: bold;
   flex-grow: 1;
 }
+
 
 /* ------------------------------
    Output
