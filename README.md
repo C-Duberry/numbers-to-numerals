@@ -3,7 +3,7 @@
 A responsive web tool that converts numbers into written numerals, featuring a clean and intuitive interface.
 
 ## Demo
-<img src="screenshots/numeral-screenshot.PNG" width="400" height="300" />
+<img src="screenshots/numeral-screenshot.png" width="400" height="300" />
 
 ## Features
 
